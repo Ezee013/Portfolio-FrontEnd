@@ -1,0 +1,56 @@
+#container {
+    background: #233142;
+    text-align: center;
+}
+
+.row {
+    padding: 30px;
+}
+
+#name {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #1d1716;
+}
+
+p {
+    color: #1d1716;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+img {
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px gray;
+    position: relative;
+    top: -20px;
+}
+
+.columna {
+    border-right: 1px solid black;
+}
+
+hr {
+    display: none;
+}
+
+@media screen and (max-width: 575px) {
+    hr {
+        display: block;
+        border-top: 2px dotted black;
+    }
+    .columna {
+        padding-bottom: 30px;
+        border: 0px;
+    }
+    .row {
+        padding-top: 1px;
+    }
+}

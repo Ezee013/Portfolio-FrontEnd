@@ -1,0 +1,15 @@
+/* img {
+    width: 100%;
+    height: 100%;
+    padding: calc(2%);
+}
+
+div {
+    background-color: darkgray;
+    max-height: 700px;
+} */
+
+.image {
+    display: flex;
+    justify-content: center;
+}

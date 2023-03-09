@@ -1,0 +1,41 @@
+#container {
+    border: 1px dotted #000000;
+    padding: 30px;
+    background-color: #233142;
+}
+
+.tittle {
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 0 50px 0 20px;
+    color: black;
+}
+
+.education-container {
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image,
+.description {
+    padding: 10px;
+}
+
+.description {
+    border-left: 2px dotted black;
+    padding-left: 40px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #141010;
+}
+
+h3 {
+    color: #222831;
+}

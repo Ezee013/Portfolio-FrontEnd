@@ -1,0 +1,22 @@
+.nav-link {
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+li {
+    padding: 0 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: gainsboro;
+}
+
+.navbar .nav-item:hover .nav-link {
+    color: pink;
+}
+
+.navbar-toggler {
+    background-color: gainsboro;
+    margin-right: 15px;
+}

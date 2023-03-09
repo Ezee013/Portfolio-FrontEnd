@@ -1,0 +1,48 @@
+#container {
+    background-color: #141010;
+    padding: 30px;
+}
+
+.tittle {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.images {
+    display: flex;
+    gap: 10px;
+}
+
+img {
+    width: 30px;
+}
+
+span {
+    font-size: large;
+}
+
+.copyright {
+    border-top: 1px solid;
+    border-radius: 10%;
+    padding: 15px;
+    margin: 30px 20px 20px;
+}
+
+p {
+    padding-top: 20px;
+    width: 52%;
+    font-size: 17px;
+}
+
+a:hover {
+    opacity: .8;
+    width: 2rem;
+}

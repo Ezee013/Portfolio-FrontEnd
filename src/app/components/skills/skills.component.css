@@ -1,0 +1,39 @@
+#container {
+    background-color: #233142;
+    border: 1px dotted #000000;
+    padding: 30px;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    height: 300px;
+    padding: 10px 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #5c5470;
+    font-weight: 650;
+    font-size: 15px;
+}
+
+.tittle {
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: 30px;
+    color: black;
+}
+
+h5 {
+    font-weight: 750;
+    color: darkslateblue;
+}
+
+.progress-bar {
+    color: #000000;
+    font-weight: bold;
+}

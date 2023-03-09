@@ -1,0 +1,32 @@
+#container {
+    background-color: #233142;
+    border: 1px dotted #000000;
+    padding: 30px;
+}
+
+.tittle {
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: 30px;
+    color: black;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    height: 350px;
+    padding: 10px;
+}
+
+.card-text,
+.card-subtitle,
+.card-title {
+    color: white;
+}
