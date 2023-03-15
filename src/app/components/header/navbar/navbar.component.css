@@ -5,18 +5,32 @@
 }
 
 li {
-    padding: 0 10px;
+    padding: 0;
 }
 
 .navbar .navbar-nav .nav-link {
     color: gainsboro;
 }
 
-.navbar .nav-item:hover .nav-link {
-    color: pink;
+.navbar .nav-item:hover a {
+    background-color: rgb(223, 223, 223);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 15px;
 }
 
 .navbar-toggler {
     background-color: gainsboro;
     margin-right: 15px;
+}
+
+@media screen and (max-width: 575px) {
+    .navbar .nav-item a {
+        font-weight: bold;
+        font-size: large;
+        padding: 10px 0;
+    }
+    .btn {
+        font-size: large;
+    }
 }
