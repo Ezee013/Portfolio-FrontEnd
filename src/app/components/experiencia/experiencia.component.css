@@ -30,3 +30,36 @@
 .card-title {
     color: white;
 }
+
+.btn {
+    /* width: 40px; */
+    margin: 0px 10px;
+    /* height: fit-content; */
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconos div {
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+    height: 70%;
+}
+
+.modal-content {
+    background-color: #000000aa;
+    color: aliceblue;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.form-group input {
+    margin: 10px 0;
+}

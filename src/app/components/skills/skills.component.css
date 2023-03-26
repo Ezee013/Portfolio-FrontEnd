@@ -7,15 +7,14 @@
 .skill-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    height: 300px;
-    padding: 10px 20px;
+    gap: 10px;
+    /* padding: 10px 20px; */
 }
 
 .skill {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     color: #5c5470;
     font-weight: 650;
     font-size: 15px;
@@ -33,7 +32,40 @@ h5 {
     color: darkslateblue;
 }
 
-.progress-bar {
-    color: #000000;
-    font-weight: bold;
+.btn {
+    margin: 0px 10px;
 }
+
+.barra {
+    width: 100%;
+}
+
+.modal-content {
+    background-color: #000000aa;
+    color: aliceblue;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.form-group input {
+    margin: 10px 0;
+}
+
+
+/* @media screen and (max-width:1140px) {
+    .skill-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .skill-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+} */

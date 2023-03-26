@@ -1,13 +1,66 @@
 <div id="container">
+
+
     <div class="about-container">
         <div class="me">
-            <img src="../../../assets/yo.png" alt="profile picture" class="img-fluid">
-            <h1 id="name">Soy {{persona.nombre}} {{persona.apellido}}</h1>
-            <h2>Full Stack Developer Jr.</h2>
+            <div class="d-flex justify-content-center">
+                <img src={{persona.img}} alt="*imagen de perfil*" class="img-fluid">
+                <div *ngIf="isLogged" class="edit-container">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#persona">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                        </svg>
+                    </button>
+                    <div class="modal fade" id="persona" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="personaLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="personaLabel">Editar persona</h1>
+                                </div>
+                                <div class="modal-body">
+                                    <form (ngSubmit)="onUpdate()" novalidate #formPersona="ngForm">
+                                        <div class="form-group">
+                                            <label for="nombre">Nombre</label>
+                                            <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="apellido">Apellido</label>
+                                            <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="descripcion">Sobre mi</label>
+                                            <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="persona.descripcion" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="profesion">Profesion</label>
+                                            <input type="text" class="form-control" id="profesion" name="profesion" [(ngModel)]="persona.profesion" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="img">Imagen/logo de la empresa</label>
+                                            <input type="text" class="form-control" id="img" name="img" [(ngModel)]="persona.img">
+                                        </div>
+                                        <button class="btn btn-outline-success" data-bs-dismiss="modal">
+                                                Actualizar
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 id="name">Soy {{persona.nombre}} {{persona.apellido}} </h1>
+            <h2>{{persona.profesion}}</h2>
         </div>
-        <div class="info">
+        <div class="descripcion">
             <h1>Acerca de mi</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, enim.</p>
+            <p>{{persona.descripcion}}</p>
         </div>
     </div>
 </div>
+
+<!-- ../../../assets/yo.png -->

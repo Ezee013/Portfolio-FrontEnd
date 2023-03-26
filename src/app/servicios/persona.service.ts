@@ -12,12 +12,20 @@ import { Persona } from '../model/persona.model';
 
 export class PersonaService {
 
-  URL = "http://localhost:8080/persona/traer/";
+  URL = "http://localhost:8080/persona/";
 
-  constructor(private htpp:HttpClient) { }
-  
-  public getPersona(): Observable<Persona> {
-    return this.htpp.get<Persona>(this.URL + "2")
+  constructor(private httpClient: HttpClient) { }
+
+  public lista(): Observable<Persona[]>{
+    return this.httpClient.get<Persona[]>(this.URL + 'list');
+  }
+
+  public detail(id: number): Observable<Persona>{
+    return this.httpClient.get<Persona>(this.URL + `detail/${id}`);
+  } 
+
+  public update(id: number, persona: Persona): Observable<any>{
+    return this.httpClient.put<any>(this.URL + `update/${id}`, persona);
   }
    
 }

@@ -20,7 +20,7 @@
 }
 
 .me h2 {
-    font-size: 25px;
+    font-size: x-large;
 }
 
 .me img {
@@ -29,18 +29,35 @@
     box-shadow: 3px 2px 2px rgba(128, 128, 128, 0.5);
 }
 
-.info {
+.descripcion {
     border-left: 1px solid black;
     padding: 35px;
 }
 
-.info h1 {
+.descripcion h1 {
     font-weight: bolder;
     font-size: 40px;
 }
 
-.info p {
+.descripcion p {
     font-size: 17px;
+}
+
+.modal-content {
+    background-color: #000000aa;
+    color: aliceblue;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.form-group input {
+    margin: 10px 0;
+}
+
+.edit-container button {
+    color: blanchedalmond;
 }
 
 @media screen and (max-width:575px) {
@@ -50,7 +67,7 @@
         gap: 20px;
         margin: 20px;
     }
-    .info {
+    .descripcion {
         border-top: 1.7px dashed black;
         border-left: none;
         padding: 35px;
