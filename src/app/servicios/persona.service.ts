@@ -1,8 +1,6 @@
-import { AUTO_STYLE } from '@angular/animations';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment';
 import { Persona } from '../model/persona.model';
 
 
@@ -13,11 +11,11 @@ import { Persona } from '../model/persona.model';
 
 export class PersonaService {
 
-  URL = environment.URL + "persona/";
+URL = 'https://backendez.onrender.com/persona/';
 
   constructor(private httpClient: HttpClient) { }
 
-  public lista(): Observable<Persona[]>{
+  public list(): Observable<Persona[]>{
     return this.httpClient.get<Persona[]>(this.URL + 'list');
   }
 

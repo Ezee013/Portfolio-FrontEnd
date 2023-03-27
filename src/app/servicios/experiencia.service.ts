@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment';
 import { Experiencia } from '../model/experiencia';
 
 @Injectable({
@@ -9,11 +8,11 @@ import { Experiencia } from '../model/experiencia';
 })
 export class ExperienciaService {
 
-  URL = environment.URL + "experiencia/";
+URL = 'https://backendez.onrender.com/experiencia/';
 
   constructor(private httpClient: HttpClient) { }
 
-  public lista(): Observable<Experiencia[]>{
+  public list(): Observable<Experiencia[]>{
     return this.httpClient.get<Experiencia[]>(this.URL + 'list');
   }
 

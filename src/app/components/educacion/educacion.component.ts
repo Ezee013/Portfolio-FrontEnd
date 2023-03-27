@@ -39,13 +39,13 @@ export class EducacionComponent {
       nombre : ['', [Validators.required, Validators.minLength(3)]],
       inicio : ['', [Validators.required, Validators.min(1000)]],
       fin : ['', [Validators.required, Validators.min(1000)]],
-      descripcion : ['', [Validators.required, Validators.minLength(15)]],
+      descripcion : ['', [Validators.required, Validators.minLength(5)]],
       img : ['']
     })
   }
 
   cargarEducacion(): void {
-    this.eduService.lista().subscribe((data) => {
+    this.eduService.list().subscribe((data) => {
       this.educacion = data;
     });
   }

@@ -37,7 +37,7 @@ export class ProyectosComponent {
   initForm(): FormGroup {
     return this.fb.group({
       nombre : ['', [Validators.required, Validators.minLength(3)]],
-      descripcion : ['', [Validators.required, Validators.minLength(15)]],
+      descripcion : ['', [Validators.required, Validators.minLength(5)]],
       link : ['', [Validators.required]],
       img : ['']
     })
@@ -45,7 +45,7 @@ export class ProyectosComponent {
 
 
   cargarProyecto(): void {
-    this.proyectoService.lista().subscribe((data) => {
+    this.proyectoService.list().subscribe((data) => {
       this.proyecto = data;
     });
   }

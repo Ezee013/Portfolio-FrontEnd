@@ -1,19 +1,17 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment';
 import { Skill } from '../model/skill';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SkillService {
-
-  URL = environment.URL +  "skill/";
+URL = 'https://backendez.onrender.com/skill/';
 
   constructor(private httpClient: HttpClient) { }
 
-  public lista(): Observable<Skill[]>{
+  public list(): Observable<Skill[]>{
     return this.httpClient.get<Skill[]>(this.URL + 'list');
   }
 

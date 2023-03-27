@@ -77,7 +77,7 @@ export class SkillsComponent {
   }
 
   cargarHabilidad(): void {
-    this.skillService.lista().subscribe((data) => {
+    this.skillService.list().subscribe((data) => {
       this.skills = data;
     });
   }
