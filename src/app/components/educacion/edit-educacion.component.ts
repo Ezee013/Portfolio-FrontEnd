@@ -44,7 +44,7 @@ export class EditEducacionComponent {
     this.eduService.update(id, this.edu).subscribe(
       data => {
         Swal.fire({
-          title: 'Ooops',
+          title: 'Perfecto',
           text: 'La educacion se edito con exito',
           icon: 'success',
           background: '#0000',
