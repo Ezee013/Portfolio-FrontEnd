@@ -1,6 +1,7 @@
 #container {
     padding: 30px;
     background-color: #233142;
+    border-top: 1px dotted #000000;
 }
 
 .tittle {
