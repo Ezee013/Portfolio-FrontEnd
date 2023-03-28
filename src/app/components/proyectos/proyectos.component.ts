@@ -67,6 +67,7 @@ export class ProyectosComponent {
         showConfirmButton: false
       })
       this.cargarProyecto();
+      this.crearForm = this.initForm();
     }, err =>{
       Swal.fire({
         title: 'Ooops',

@@ -112,6 +112,7 @@ export class EducacionComponent {
         // imageAlt:
       })
       this.cargarEducacion();
+      this.crearForm = this.initForm();
     }, err =>{
       Swal.fire({
         title: 'Ooops',

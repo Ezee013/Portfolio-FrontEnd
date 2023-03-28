@@ -67,6 +67,7 @@ export class ExperienciaComponent implements OnInit {
         showConfirmButton: false
       })
       this.cargarExperiencia();
+      this.crearForm = this.initForm();
     }, err =>{
       Swal.fire({
         title: 'Ooops',

@@ -58,6 +58,7 @@ export class SkillsComponent {
         showConfirmButton: false
       })
       this.cargarHabilidad();
+      this.crearForm = this.initForm();
     }, err =>{
       Swal.fire({
         title: 'Ooops',
